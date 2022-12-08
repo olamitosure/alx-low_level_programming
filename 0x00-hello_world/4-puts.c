@@ -1,16 +1,9 @@
-#include <string.h>
-
+#include <stdio.h>
 /**
- * main - Main function of the project
- *
- *
- * Return: return 0 all the time
- * /
-  int main(void)
-  {
-  char show[52];
-
-  strcpy(show, "\"programming is like building a multilingual puzzle");
-  puts(show);
-  return (0);
-  }
+ * * main - Receives noargument value
+ * * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	puts("\"programming is like building a multilingual puzzle\n");
+	return (0);
