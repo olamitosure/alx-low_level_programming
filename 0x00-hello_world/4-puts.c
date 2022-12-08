@@ -1,9 +1,11 @@
 #include <stdio.h>
 /**
- * * main - Receives noargument value
- * * Return: Always 0 (Success)
+ * main - Entry Point
+ *
+ * return:Always 0 (Success)
  */
+
 int main(void)
-{
-	puts("\"programming is like building a multilingual puzzle");
-	return (0);
+(
+ 	puts("\"programming is like building a multiling	ual puzzle");
+	reurn (0);
