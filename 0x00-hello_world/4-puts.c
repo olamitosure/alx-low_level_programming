@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- *  * main - Receives no arguement vallue
+ *  * main - Receives no arguement value
  *  *
  *  * Return: Always 0 (Success)
  */

@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * * main - Receives no argument value
- * *
- * * Return: Always 0 (Success)
+ * main - print a c program using printf
+ *
+ * * Return: 0
  */
 int main(void)
 {
