@@ -1,20 +1,18 @@
 #include <stdio.h>
 /**
 * main - Entry point
-*
+* Description: Generate numbers from 0 to 9
 * Return: Always 0 (success)
 */
 
 int main(void)
 {
-	int c;
+	int n;
 
-	c = 0;
-	while
-		(c < 10) {
-			putchar(c + 0);
-			c++;
+	for (n = 0; n < 10; n++)
+		{
+		putchar(n + '0');
 		}
-	putchar('\n' + 0);
+	putchar('\n');
 	return (0);
 }
