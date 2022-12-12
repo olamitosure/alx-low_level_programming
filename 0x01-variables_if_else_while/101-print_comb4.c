@@ -8,20 +8,24 @@
 
 int main(void)
 {
-	int j, k;
+	int j, k, l;
 
 	for (j = '0'; j <= '9'; j++)
 	{
 		for (k = '0'; k <= '9'; k++)
 		{
-			if (j < k)
+			for (l = '0'; l <= '9'; l++)
 			{
-				putchar(j);
-				putchar(k);
-				if (j != '8' || (j == '8' && k != '9'))
+				if (j < k)
 				{
+					putchar(j);
+					putchar(k);
+					putchar(l);
+					if (j != '8' || (j == '8' && k != '9' && l != 7))
+					{
 					putchar(',');
 					putchar(' ');
+					}
 				}
 			}
 		}
