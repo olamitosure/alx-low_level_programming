@@ -3,7 +3,7 @@
 /**
 * main - Entry point code by Heph
 * Description: This program prints all single digits number with comma
-* return: This program returns 0 as success
+*Return: Always 0 (success)
 */
 
 int main(void)
