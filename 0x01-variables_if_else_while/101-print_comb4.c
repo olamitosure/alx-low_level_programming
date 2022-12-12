@@ -8,20 +8,24 @@
 
 int main(void)
 {
-	int j, k, l;
+	int ones = 0;
+	int tens = 0;
+	int hundreds = 0;
 
-	for (j = '0'; j <= '9'; j++)
+	for (hundreds = '0'; tens <= '9'; hundreds++)
 	{
-		for (k = '0'; k <= '9'; k++)
+		for (tens = '0'; tens <= '9'; tens++)
 		{
-			for (l = '0'; l <= '9'; l++)
+			for (ones = '0'; ones <= '9'; ones++)
 			{
-				if (j != k)
+				if (!(ones == tens) || (tens == hundreds)
+						|| (tens > ones) || (hundreds > tens)) /*elliminates repitition*/
 				{
-					putchar(j);
-					putchar(k);
-					putchar(l);
-					if (j != '7' || (j == '7' && k != '7' && l != 7))
+					putchar(hundreds);
+					putchar(tens);
+					putchar(ones);
+					if (!(ones == '9' && hundreds == '7' &&
+								tens == '8')) /*adds commas and spaces*/
 					{
 					putchar(',');
 					putchar(' ');
