@@ -1,8 +1,8 @@
 #include "main.h"
 /**
-* main - Entry point
+* print_alphabet - Entry point
 * Description: print all the alphabet in lower case
-* Return: Always 0 (success)
+* Return: 0
 */
 
 void print_alphabet(void)
@@ -11,9 +11,8 @@ void print_alphabet(void)
 
 	while (c <= 'z')
 	{
-		putchar(c);
+		_putchar(c);
 			c++;
 	}
-	putchar('\n');
-	return (0);
+	_putchar('\n');
 }
