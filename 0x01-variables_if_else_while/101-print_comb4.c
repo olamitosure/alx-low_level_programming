@@ -7,29 +7,21 @@
 
 int main(void)
 {
-	int ones = 0;
-	int tens = 0;
-	int hundreds = 0;
+	int num1, num2, num3;
 
-	for (hundreds = '0'; tens <= '9'; hundreds++)
+	for (num1 = '0'; num1 <= 8; num1++)
 	{
-		for (tens = '0'; tens <= '9'; tens++)
+		for (num2 = num1 + 1; num2 <= 9; num2++)
 		{
-			for (ones = '0'; ones <= '9'; ones++)
+			for (num3 = num2 + 1 ; num3 <= 10; num3++)
 			{
-				if (!(ones == tens) || (tens == hundreds)
-						|| (tens > ones) || (hundreds > tens)) /*elliminates repitition*/
-				{
-					putchar(hundreds);
-					putchar(tens);
-					putchar(ones);
-					if (!(ones == '9' && hundreds == '7' &&
-								tens == '8')) /*adds commas and spaces*/
-					{
+				putchar((num3 % 10) + '0');
+				putchar((num2 % 10) + '0');
+				putchar((num1 % 10) + '0');
+				if (num1 == 7 && num2 == 8 && num3 == 9)
+				continue;
 					putchar(',');
 					putchar(' ');
-					}
-				}
 			}
 		}
 	}
