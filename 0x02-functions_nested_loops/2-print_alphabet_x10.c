@@ -1,10 +1,11 @@
 #include "main.h"
 /**
-* print_alphabet_10 -> the lowercase
-* Return: 0
+*main - Entry point
+* print alphabet in 10 lines -> the lowercase
+*Return: 0
 */
 
-void print_alphabet_x10(void)
+int main(void)
 {
 	char i;
 	int x;
@@ -13,8 +14,9 @@ void print_alphabet_x10(void)
 	{
 		for (x = 'a'; x <= 'z'; x++)
 		{
-			putchar(x);
+			_putchar(x);
 		}
-		putchar('\n');
 	}
+	_putchar('\n');
+	return (0);
 }
