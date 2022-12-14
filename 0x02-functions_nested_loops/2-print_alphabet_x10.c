@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 /**
 * print_alphabet_10 -> the lowercase
 * Return: 0
