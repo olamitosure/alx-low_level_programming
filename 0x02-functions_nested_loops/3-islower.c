@@ -7,29 +7,11 @@
  * Return: 1 if true. 0 if false.
  */
 
-int _islower(int c);
-
+int _islower(int c)
 {
-
-	int b = 'a';
-
-	for (b = 'a'; b <= 'z'; b++)
-
+	if (c >= 'a' && c <= 'z')
 	{
-
-		/* refer int c*/
-
-		if (c == b)
-
-		{
-
-			return (1);
-
-		}
-
+		return (1);
 	}
-
 	return (0);
-
-
 }
