@@ -1,4 +1,3 @@
-#include <unistd.h>
 #include "main.h"
 /**
  * _isupper - checks for upper case alphabets
@@ -8,12 +7,14 @@
 
 int _isupper(int c)
 {
-char 'uppercase';
-for (uppercase <= 'Z'; uppercase++)
+char uppercase = 'A'
+int _isupper = '0'
+
+for (; uppercase <= 'Z'; uppercase++)
 
 {
 if (c == uppercase)
-return (1);
+return (_isupper);
 }
-putchar('\n');
+
 }
