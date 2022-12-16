@@ -7,14 +7,10 @@
 
 int _isupper(int c)
 {
-char uppercase = 'A'
-int _isupper = '0'
 
-for (; uppercase <= 'Z'; uppercase++)
-
-{
-if (c == uppercase)
-return (_isupper);
-}
-
+	if (c >= 'A' && c <= 'Z')
+	{
+		return (1);
+	}
+	return (0);
 }
