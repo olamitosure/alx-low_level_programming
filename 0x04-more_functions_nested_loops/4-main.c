@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -5,8 +6,8 @@
  *
  * Return: Always 0.
  */
-void print_numbers(void)
+int main(void)
 {
-	print_numbers();
-	return (0);
+    print_most_numbers();
+    return (0);
 }
