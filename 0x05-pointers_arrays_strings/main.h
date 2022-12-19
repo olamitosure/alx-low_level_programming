@@ -4,9 +4,8 @@
 /**
  * file: main.h
  * Author:Heph
-* Description: Header file with prototype for each task's function
+ * Description: Header file with prototype for each task's function
 */
-#include <stndlib.h>
 int _putchar(char c);
 void reset_to_98(int *n);
 void swap_int(int *a, int *b);
