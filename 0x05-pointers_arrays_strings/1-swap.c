@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * swap_int(int *a, int *b)
+ * swap_int - swap the value of two integers
  * Code by: Heph
  * Description: This program swaps the integer of int (*a, int *b)
  * @a: First integer
