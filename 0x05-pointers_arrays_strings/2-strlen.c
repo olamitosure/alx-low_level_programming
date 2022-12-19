@@ -1,8 +1,7 @@
-#include "msin.h"
-#include <stdio.h>
+#include "main.h"
 
 /**
- * _strlen - return the length of  string entered
+ *int _strlen Returns the length of a link
  * @s: the string to be entered
  * Return: return length
 
@@ -14,4 +13,6 @@ int _strlen(char *s)
 	while (s[length])
 
 		length++;
+
+		return (length);
 }
