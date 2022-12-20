@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _strlen - Return length of string entered
  * @s: string to be entered
@@ -11,5 +12,3 @@ int _strlen(char *s)
 		length++;
 	return (length);
 }
-Footer
-
