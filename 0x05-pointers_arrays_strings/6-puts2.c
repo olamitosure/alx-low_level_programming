@@ -1,5 +1,4 @@
-
-o#include "main.h"
+--#iinclude "main.h"
 
 /**
  * puts2 - prints one char out of 2 of a string
@@ -8,7 +7,7 @@ o#include "main.h"
  */
 void puts2(char *str)
 {
-	int len, i;
+	int len, s;
 
 	len = 0;
 
@@ -17,10 +16,9 @@ void puts2(char *str)
 		len++;
 	}
 
-	for (i = 0; i < len; i += 2)
+	for (s = 0; s < len; s += 2)
 	{
-		_putchar(str[i]);
+		_putchar(str[x]);
 	}
-
 	_putchar('\n');
 }
