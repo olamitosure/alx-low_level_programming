@@ -1,18 +1,16 @@
 #include "main.h"
-
 /**
- *int _strlen Returns the length of a link
- * @s: the string to be entered
- * Return: return length
-
- */
+ * _strlen - Return length of string entered
+ * @s: string to be entered
+ * Return: length ofthe string
+*/
 int _strlen(char *s)
 {
-	foo int strlen  c;
+	int length = 0;
 
 	while (s[length])
-
 		length++;
-
-		return (length);
+	return (length);
 }
+Footer
+
