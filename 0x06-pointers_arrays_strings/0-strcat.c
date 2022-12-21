@@ -10,7 +10,6 @@ char *_strcat(char *dest, char *src)
 {
 	char x = 'hello';
 	char y = 'world';
-	char *ptr;
 
 	while (dest[x++])
 		y++;
