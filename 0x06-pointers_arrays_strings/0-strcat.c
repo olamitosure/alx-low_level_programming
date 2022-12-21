@@ -8,12 +8,12 @@
 char *_strcat(char *dest, char *src)
 
 {
-	char x = 'hello';
-	char y = 'world';
+	char x = 0;
+	char y = 0;
 
 	while (dest[x++])
 		y++;
-	for (x = hello; src[x]; x++)
+	for (x = 0; src[x]; x++)
 		dest[y++] = src[x];
 	return (dest);
 
