@@ -1,44 +1,33 @@
 #include "main.h"
 
 /**
- * _strlen_recursion - returns the length of a string.
- * @s: string
- * Return: the length of a string.
+ * str_checker - check if two strings are identical.
+ * @s1: string_1 base address.
+ * @s2: string_2 base address.
+ * @i: left index.
+ * @j: special index. (joker)
+ * Return: 1 if s is palindrome, 0 otherwise.
  */
-int _strlen_recursion(char *s)
+int str_checker(char *s1, char *s2, int i, int j)
 {
-	if (*s == '\0')
-		return (0);
-	else
-		return (1 + _strlen_recursion(s + 1));
-}
-
-/**
- * comparator - compares each character of the string.
- * @s: string
- * @n1: smallest iterator.
- * @n2: biggest iterator.
- * Return: .
- */
-int comparator(char *s, int n1, int n2)
-{
-	if (*(s + n1) == *(s + n2))
-	{
-		if (n1 == n2 || n1 == n2 + 1)
-			return (1);
-		return (0 + comparator(s, n1 + 1, n2 - 1));
-	}
+	if (s1[i] == '\0' && s2[j] == '\0')
+		return (1);
+	if (s1[i] == s2[j])
+		return (str_checker(s1, s2, i + 1, j + 1));
+	if (s1[i] == '\0' && s2[j] == '*')
+		return (str_checker(s1, s2, i, j + 1));
+	if (s2[j] == '*')
+		return (str_checker(s1, s2, i + 1, j) || str_checker(s1, s2, i, j + 1));
 	return (0);
 }
-
 /**
- * is_palindrome - detects if a string is a palindrome.
- * @s: string.
- * Return: 1 if s is a palindrome, 0 if not.
+ * wildcmp - check if strings could be considered identical
+ * @s1: base address for string.
+ * @s2: base address for string.
+ *
+ * Return: 1 if are considered identical.
  */
-int is_palindrome(char *s)
+int wildcmp(char *s1, char *s2)
 {
-	if (*s == '\0')
-		return (1);
-	return (comparator(s, 0, _strlen_recursion(s) - 1));
+	return (str_checker(s1, s2, 0, 0));
 }
