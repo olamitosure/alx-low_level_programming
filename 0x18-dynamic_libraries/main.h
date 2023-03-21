@@ -1,20 +1,3 @@
-
-engrproama
-/
-alx-low_level_programming
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-alx-low_level_programming/0x18-dynamic_libraries/main.h
-@engrproama
-engrproama The Main Header File
- 1 contributor
-25 lines (23 sloc)  708 Bytes
 #ifndef _MAIN_H_
 #define _MAIN_H_
 
