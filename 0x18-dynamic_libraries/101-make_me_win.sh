@@ -1,3 +1,3 @@
 #!/bin/bash
-wget-P..
+wget-P
 export LD_PRELOAD="$PWD/../libgiga.so"
