@@ -1,5 +1,22 @@
-#ifndef _MAIN_H
-#define _MAIN_H
+
+engrproama
+/
+alx-low_level_programming
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+Insights
+alx-low_level_programming/0x18-dynamic_libraries/main.h
+@engrproama
+engrproama The Main Header File
+ 1 contributor
+25 lines (23 sloc)  708 Bytes
+#ifndef _MAIN_H_
+#define _MAIN_H_
 
 int _putchar(char c);
 int _islower(int c);
@@ -22,4 +39,4 @@ unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 
-#endif /*_MAIN_H*/
+#endif /* _MAIN_H_ */
